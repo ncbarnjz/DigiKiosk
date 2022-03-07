@@ -1,11 +1,21 @@
 
 <form (ngSubmit)="submit(f.value)">
 <div class="container pt-5">
-  
+
+  <div class="row">
+    <div class="col-md-6">
+      <h4>{{ counter }}</h4>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <pre> {{ mobile | json }}</pre>
+  </div>
   <div class="row">
 
     <div class="col-md-6">
       <mat-form-field appearance="outline">
+        <mat-label>{{ mobile }}</mat-label>
         <input #f type="text" matInput/>
       </mat-form-field>
     </div>
